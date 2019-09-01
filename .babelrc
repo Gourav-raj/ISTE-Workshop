@@ -1,0 +1,18 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "transform-imports",
+      {
+        "@material-ui/core": {
+          "transform": "@material-ui/core/${member}",
+          "preventFullImport": true
+        },
+        "@material-ui/styles": {
+          "transform": "@material-ui/styles/${member}",
+          "preventFullImport": true
+        }
+      }
+    ]
+  ]
+}
